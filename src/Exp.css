@@ -1,0 +1,141 @@
+/* Import the app.scss file */
+@import "../../app.scss";
+
+/* Styles for .portfolio class */
+.portfolio {
+  position: relative;
+}
+
+/* Styles for .progress class */
+.portfolio .progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  text-align: center;
+  color: orange;
+  font-size: 36px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .progress {
+    padding-top: calc(100vh - 100px);
+    font-size: 24px;
+  }
+}
+
+/* Styles for .progressBar class */
+.portfolio .progress .progressBar {
+  height: 10px;
+  background-color: white;
+}
+
+/* Styles for .container class */
+.portfolio .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Styles for .wrapper class */
+.portfolio .container .wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .container .wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Styles for .imageContainer class */
+.portfolio .container .wrapper .imageContainer {
+  flex: 1;
+  height: 50%;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .container .wrapper .imageContainer {
+    width: 100%;
+    max-height: 300px;
+  }
+}
+
+/* Styles for images within .imageContainer */
+.portfolio .container .wrapper .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .container .wrapper .imageContainer img {
+    object-fit: contain;
+  }
+}
+
+/* Styles for .textContainer class */
+.portfolio .container .wrapper .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .container .wrapper .textContainer {
+    transform: none !important;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Styles for heading within .textContainer */
+.portfolio .container .wrapper .textContainer h2 {
+  font-size: 72px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .container .wrapper .textContainer h2 {
+    font-size: 36px;
+  }
+}
+
+/* Styles for paragraphs within .textContainer */
+.portfolio .container .wrapper .textContainer p {
+  color: gray;
+  font-size: 20px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .portfolio .container .wrapper .textContainer p {
+    font-size: 16px;
+  }
+}
+
+/* Styles for buttons within .textContainer */
+.portfolio .container .wrapper .textContainer button {
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
